@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 145%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center; 
+    filter: blur(4px); 
+    z-index: -1;
+}
+
+h1 {
+    font-size: 4em;
+    color: #5e10ef;
+    margin-bottom: 30px;
+    animation: slideIn 2s ease-out;
+    text-shadow: 10px 2px 5px rgba(176, 128, 235, 0.792);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+input[type="button"] {
+    background-color: #e6ea7dc9;
+    color: white;
+    align-items: center;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: 190px;
+    height: 10vh;
+    text-align: center;
+    box-shadow: 10px 8px 14px rgb(243, 235, 6);
+    transition: transform 0.5s ease, background-color 0.3 ease, box-shadow 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #71e576;
+    transform: scale(1.3);
+    box-shadow: 10px 8px 14px rgb(223, 19, 19);
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+a {
+    text-decoration: none;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

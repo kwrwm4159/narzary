@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 15px;
+    margin-left: 360px; /* Left alignment within the form */
+}
+
+/* Step Forms */
+form {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Hidden Steps */
+#step1, #step2, #step3 {
+    display: none;
+}
+
+#step1 {
+    display: block;
+}
+
+#step3 input[readonly] {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* Confirmation Message */
+h2.booking-confirmation {
+    color: #28a745;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+h2.booking-failure {
+    color: #dc3545;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        margin-left: 20px;
+    }
+}
